@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "module": "commonjs",
+        "types": ["node", "playwright"],
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "strict": true,
+        "baseUrl": ".",
+        "paths": {
+        "@api/*": ["api/*"]
+        },
+        "outDir": "dist"
+    },
+    "include": [
+        "api", 
+        "tests", 
+        "playwright.config.ts"  // Include the playwright.config.ts file if it's not already included
+    ]
+}  
