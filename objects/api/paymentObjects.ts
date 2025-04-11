@@ -1,13 +1,10 @@
 import { APIRequestContext } from '@playwright/test';
+import { CheckoutResponse } from '../types/payment';
 
 interface PaymentInfo {
   payment_method: string;
   payment_details: object;
 }
-
-type CheckoutResponse = {
-  message: string;
-};
 
 export async function checkout(
   request: APIRequestContext,
